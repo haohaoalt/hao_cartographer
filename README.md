@@ -1,3 +1,10 @@
+<!--
+ * @Author: zhanghao
+ * @Date: 2022-07-12 20:07:57
+ * @LastEditTime: 2022-07-12 20:15:02
+ * @FilePath: /hao_cartographer/README.md
+ * @Description: 
+-->
 # hao_cartographer
 my cartographer repository
 
@@ -38,7 +45,7 @@ Now you need to install cartographer_ros’ dependencies. First, we use rosdep t
 ```
 sudo rosdep init
 rosdep update
-rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
+rosdep install --from-paths src --ignore-src --rosdistro melodic -r -y
 
 ```
 Cartographer uses the abseil-cpp library that needs to be manually installed using this script:
