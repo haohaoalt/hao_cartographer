@@ -1,7 +1,7 @@
 <!--
  * @Author: zhanghao
  * @Date: 2022-07-12 20:07:57
- * @LastEditTime: 2022-07-12 20:15:02
+ * @LastEditTime: 2022-07-12 20:20:04
  * @FilePath: /hao_cartographer/README.md
  * @Description: 
 -->
@@ -55,9 +55,18 @@ Due to conflicting versions you might need to uninstall the ROS abseil-cpp using
 ```
 sudo apt-get remove ros-${ROS_DISTRO}-abseil-cpp
 ```
+```
+cd src
+cd cartographer
+cd scripts
+chmod +x install_abseil.sh
+./install_abseil.sh
+```
 
 Build and install.
 ```
+cd ..
+cd ..
 catkin_make_isolated --install --use-ninja
 ```
 
